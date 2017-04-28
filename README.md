@@ -44,7 +44,11 @@ Step 1: Create an Incoming Webhook in Rocket.chat (Account Settings > Integratio
 
 Step 2: Install this Redmine plugin for Rocket.chat.
 
-![step2](https://raw.githubusercontent.com/furylynx/redmine_rocketchat/assets/step2.png)
+
+    git clone https://github.com/furylynx/redmine_rocketchat.git redmine_rocketchat
+    bundle install
+
+
 
 Step 3: Configure this Redmine plugin for Rocket.chat. For per-project customized routing, leave the `Rocket.chat Channel` field empty and follow the next steps, otherwise all Redmine projects will post to the same Rocket.chat channel. Be careful when filling the channel field, you need to input the channel's handle, not the display name visible to users. You can find each channel's handle by going inside the channel and click the down-arrow and selecting view info.
 
