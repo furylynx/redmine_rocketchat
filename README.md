@@ -7,14 +7,14 @@ Redmine Supported versions: 2.0.x - 3.2.x.
 
 ## Screenshot
 
-![screenshot](https://raw.githubusercontent.com/scantem/redmine_rocketchat/assets/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/furylynx/redmine_rocketchat/assets/screenshot.png)
 
 ## Installation
 
 From your Redmine plugins directory, clone this repository as `redmine_rocketchat` (note
 the underscore!):
 
-    git clone https://github.com/scantem/redmine_rocketchat.git redmine_rocketchat
+    git clone https://github.com/furylynx/redmine_rocketchat.git redmine_rocketchat
 
 You will also need the `httpclient` dependency, which can be installed by running
 
@@ -34,31 +34,31 @@ named `Rocketchat Channel`. If no custom channel is defined for a project, the p
 project will be checked (or the default will be used). To prevent all notifications
 from being sent for a project, set the custom channel to `-`.
 
-For more information, see http://www.redmine.org/projects/redmine/wiki/Plugins (see also next section for an easy configuration demonstration). 
+For more information, see http://www.redmine.org/projects/redmine/wiki/Plugins (see also next section for an easy configuration demonstration).
 
 ## Screenshot Guided Configuration
 
 Step 1: Create an Incoming Webhook in Rocket.chat (Account Settings > Integrations > Incoming Webhooks).
 
-![step1](https://raw.githubusercontent.com/scantem/redmine_rocketchat/assets/step1.png)
+![step1](https://raw.githubusercontent.com/furylynx/redmine_rocketchat/assets/step1.png)
 
 Step 2: Install this Redmine plugin for Rocket.chat.
 
-![step2](https://raw.githubusercontent.com/scantem/redmine_rocketchat/assets/step2.png)
+![step2](https://raw.githubusercontent.com/furylynx/redmine_rocketchat/assets/step2.png)
 
 Step 3: Configure this Redmine plugin for Rocket.chat. For per-project customized routing, leave the `Rocket.chat Channel` field empty and follow the next steps, otherwise all Redmine projects will post to the same Rocket.chat channel. Be careful when filling the channel field, you need to input the channel's handle, not the display name visible to users. You can find each channel's handle by going inside the channel and click the down-arrow and selecting view info.
 
-![step3](https://raw.githubusercontent.com/scantem/redmine_rocketchat/assets/step3.png)
+![step3](https://raw.githubusercontent.com/furylynx/redmine_rocketchat/assets/step3.png)
 
 Step 4: For per-project customized routing, first create the project custom field (Administration > Custom fields > Project).
 
-![step4a](https://raw.githubusercontent.com/scantem/redmine_rocketchat/assets/step4a.png)
-![step4b](https://raw.githubusercontent.com/scantem/redmine_rocketchat/assets/step4b.png)
+![step4a](https://raw.githubusercontent.com/furylynx/redmine_rocketchat/assets/step4a.png)
+![step4b](https://raw.githubusercontent.com/furylynx/redmine_rocketchat/assets/step4b.png)
 
 Step 5: For per-project customized routing, configure the Rocket.chat channel handle inside your Redmine project.
 
-![step5](https://raw.githubusercontent.com/scantem/redmine_rocketchat/assets/step5.png)
+![step5](https://raw.githubusercontent.com/furylynx/redmine_rocketchat/assets/step5.png)
 
 ## Credits
 
-The source code is forked from https://github.com/altsol/redmine_mattermost with minor adjustments for Rocket.chat, the redmine_mattermost project was forked from https://github.com/sciyoshi/redmine-slack. Special thanks to the original author and contributors for making this awesome hook for Redmine. This fork is just refactored to use Rocket.chat-namespaced configuration options in order to use multiple hooks (Rocket.chat, Mattermost and Slack) in a Redmine installation and make the announcements Rocket.chat friendly.
+The source code is forked from https://github.com/scantem/redmine_rocketchat with minor adjustments for wiki pages. Special thanks to the original authors and contributors for making this awesome hook for Redmine.
