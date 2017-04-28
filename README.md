@@ -42,7 +42,7 @@ Step 1: Create an Incoming Webhook in Rocket.chat (Account Settings > Integratio
 
 ![step1](https://raw.githubusercontent.com/furylynx/redmine_rocketchat/assets/step1.png)
 
-Step 2: Install this Redmine plugin for Rocket.chat.
+Step 2: Install this Redmine plugin for Rocket.chat. In redmine/plugins do:
 
 
     git clone https://github.com/furylynx/redmine_rocketchat.git redmine_rocketchat
